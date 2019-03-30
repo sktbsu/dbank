@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>StarNotary DAPP</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  </head>
+  <style>
+    input {
+      display: block;
+      margin-bottom: 12px;
+    }
+  </style>
+  <body>
+    <h1>NPCI Contest</h1>
+
+    <hr>
+
+    <br>
+      <h1>Create a Bank</h1>
+      <br><label for="bankaddress">Bank Address:</label><input type="text" id="bankaddress"></input>
+      <br><label for="amount">Amount:</label><input type="text" id="amount"></input>
+      <br><br><button id="createBank" onclick="App.createBank()">Create Bank</button>
+      <br>
+      <hr>
+      <br>
+      <h1>Create a user</h1>
+      <br><label for="useraddress">User Address:</label><input type="text" id="useraddress"></input>
+      <br><label for="amount">Amount:</label><input type="text" id="amount"></input>
+      <br><label for="bankaddress">Bank Address:</label><input type="text" id="bankaddress"></input>
+      <br><br><button id="createUser" onclick="App.createUser()">Create User</button>
+      <br>
+      <hr>
+      <br>
+      <h1>Transfer Between Users</h1>
+      <br><label for="fromaddress">From Address:</label><input type="text" id="fromaddress"></input>
+      <br><label for="toaddress">To Address:</label><input type="text" id="toaddress"></input>
+      <br><label for="amount">Amount:</label><input type="text" id="amount"></input>
+      <br><br><button id="transferBetweenUsers" onclick="App.transferBetweenUsers()">Create Star</button>
+      <br>
+      <hr>
+      <br>
+      <h1>Balance of User</h1>
+      <br><label for="address">Address:</label><input type="text" id="address"></input>
+      <br><br><button onclick="App.balanceOfUser()">Look Up balance Of User</button>
+      <hr>
+      <br>
+      <span id="status"></span>
+      <br>
+    <script src="index.js"></script>
+  </body>
+</html>
